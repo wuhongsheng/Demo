@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical"
+     android:focusable="true"  
+    android:focusableInTouchMode="true" 
+
+    >
+      <!--   tools:context=".TestActivity" -->
+     <com.esri.android.map.MapView
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+         mapoptions.MapType="topo"
+         mapoptions.ZoomLevel="2"
+         mapoptions.center="33.666354, 116.903557" 
+      >
+    </com.esri.android.map.MapView>
+   <!--   mapoptions.MapType="topo"
+         mapoptions.ZoomLevel="2"
+         mapoptions.center="33.666354, 116.903557" -->
+       <include 
+           android:id="@+id/scrolltab"
+           android:layout_width="300dp"
+           android:layout_height="match_parent"
+           android:layout_alignParentLeft="true"
+           layout="@layout/scrolltab" />  
+         
+      <LinearLayout
+          android:id="@+id/l1"
+          android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@color/blue"
+            android:layout_alignParentRight="true"
+           >
+         <Button
+            android:id="@+id/btn_layerdisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_blue_bg"
+            android:text="图层数据"
+            android:visibility="gone"
+            android:textColor="@color/white" >
+        </Button>
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_blue_bg"
+            android:text="添加字段"
+            android:visibility="gone"
+            android:textColor="@color/white" >
+        </Button>
+        <TextView 
+             android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:text="当前图层："
+            android:gravity="center"/>
+        <Spinner
+            android:id="@+id/sp_layertab"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_blue_bg"
+            android:textColor="@color/white" >
+        </Spinner>
+        <!--  <Button
+            android:id="@+id/btn_addlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_blue_bg"
+            android:text="新建图层"
+            android:textColor="@color/white" >
+        </Button> -->
+    </LinearLayout>
+   
+        <TabHost
+            android:id="@+id/tabhost"
+            android:layout_width="300dp"
+            android:layout_height="match_parent" 
+            android:layout_below="@+id/l1"
+            android:background="@color/white"            
+            android:layout_alignParentRight="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" 
+                    android:background="@color/blue">
+                </TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" 
+                    >
+
+                    
+                    <include 
+                        android:id="@+id/layout_diapaly"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        layout="@layout/display"/>
+                     <include 
+                        android:id="@+id/layout_addcolumn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        layout="@layout/addcolumn"/>
+                      <include 
+                        android:id="@+id/layout_addlayer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        layout="@layout/addlayer"/>
+                </FrameLayout>
+            </LinearLayout>
+
+        </TabHost>
+        <!-- <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </android.support.v4.view.ViewPager> -->
+</RelativeLayout>

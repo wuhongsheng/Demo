@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="columnstype">
+        <item>TEXT</item>
+        <item>INT</item>
+        <item>INTEGER</item>
+        <item>DOUBLE</item>
+        <!-- <item>不在本地区</item> -->
+        
+    </string-array>
+    <string-array name="layertype">
+        <item>面</item>
+        <item>点</item>
+        <item>线</item>
+        
+        <!--  <item>POINT</item>
+        <item>LINESTRING</item>
+        <item>POLYGON</item> -->
+    </string-array>
+    <string-array name="layertab">
+         <item>tt</item>
+        <item>POINT</item>
+        <item>LINE</item>
+        <item>POLYGON</item>
+    </string-array>
+</resources>

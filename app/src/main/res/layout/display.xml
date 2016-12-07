@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/white"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btn_additem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加数据" />
+
+    <ListView
+        android:id="@+id/lv_dispaly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         android:background="@color/white"
+         android:layout_weight="1"
+         android:visibility="gone"
+         >
+    </ListView>
+    <TextView
+        android:id="@+id/tv_listtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="图层属性信息"
+        android:textColor="@android:color/black" />
+     <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cbcbcb" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_fnametitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="2"
+                android:text="名称"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tv_ftypetitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="2"
+                android:text="类型"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tv_fedittitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                 android:layout_weight="2"
+                android:text="编辑"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#cbcbcb" />
+      <ListView
+        android:id="@+id/hd_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue">
+    </ListView>
+
+    <com.otitan.android.DragDelListView
+        android:id="@+id/hd_lvv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue" 
+        android:visibility="gone">
+        
+    </com.otitan.android.DragDelListView>
+</LinearLayout>

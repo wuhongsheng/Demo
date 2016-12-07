@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+    <EditText
+        android:id="@+id/tv_addname"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/black" 
+        android:visibility="gone"
+        android:hint="请输入name"/>
+
+    <LinearLayout
+         android:id="@+id/add_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:orientation="vertical"
+        android:gravity="center">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_addconfirm"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@color/blue"
+            android:text="确定" >
+        </Button>
+        <TextView 
+             android:layout_width="5dp"
+            android:layout_height="40dp"/>
+        <Button
+            android:id="@+id/btn_addconcel"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@color/blue"
+            android:text="取消" >
+        </Button>
+    </LinearLayout>
+
+   >
+</LinearLayout>

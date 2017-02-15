@@ -13,6 +13,13 @@
         android:layout_height="50dp"
         android:onClick="onGetInfo"
         android:text="获取数据"/>
+    <Button
+        android:id="@+id/btn_login"
+         android:layout_below="@+id/btn_get"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:onClick="onLogin"
+        android:text="登录"/>
 
     <TextView
         android:id="@+id/info"

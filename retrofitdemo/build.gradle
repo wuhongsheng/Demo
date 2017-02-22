@@ -39,11 +39,15 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.0.1'
     testCompile 'junit:junit:4.12'
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'io.reactivex:rxandroid:1.2.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
     compile ('com.squareup.retrofit2:converter-simplexml:2.1.0'){
         exclude module: 'stax-api'
         exclude module: 'stax'
         exclude module: 'xpp3'
     }
     compile 'com.google.code.gson:gson:2.8.0'
+    //compile 'com.squareup.okhttp3:logging-interceptor:(insert latest version)'
+    //compile 'com.squareup.okhttp3:mockwebserver:3.6.0'
    //compile files('libs/gson-2.8.0.jar')
 }

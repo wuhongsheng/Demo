@@ -6,7 +6,7 @@ import android.content.Context;
 import com.titan.api.GitHubService;
 
 /**
- * Created by Whs on 2016/12/7 0007.
+ * Created by Whs on 2016/12/7 0007
  */
 public class MyApplication extends Application {
     public GitHubService gitHubService;

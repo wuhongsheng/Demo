@@ -12,10 +12,11 @@ buildscript {
     }
 }
 allprojects {
-
-    final def var = repositories {
+    repositories {
         jcenter()
         maven{ url 'https://esri.bintray.com/arcgis' }
+        maven { url 'https://jitpack.io' }
+
     }
 }
 
@@ -24,16 +25,7 @@ ext {
     buildToolsVersion = "25.0.0"
 }
 
-/*subprojects{
-    afterEvaluate {project ->
-        if(project.hasProperty("dependencies")){
-            dependencies {
-                compile 'com.android.support:appcompat-v7:25.0.1'
-                compile 'com.esri.arcgisruntime:arcgis-android:100.0.0'
-            }
-        }
-    }
-}*/
+
 
 task clean(type: Delete) {
     delete rootProject.buildDir

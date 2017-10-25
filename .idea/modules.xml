@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/3ddemo/3ddemo.iml" filepath="$PROJECT_DIR$/3ddemo/3ddemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/Demo.iml" filepath="$PROJECT_DIR$/Demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/datacollection/datacollection.iml" filepath="$PROJECT_DIR$/datacollection/datacollection.iml" />
       <module fileurl="file://$PROJECT_DIR$/retrofitdemo/retrofitdemo.iml" filepath="$PROJECT_DIR$/retrofitdemo/retrofitdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spatialite/spatialite.iml" filepath="$PROJECT_DIR$/spatialite/spatialite.iml" />
     </modules>
   </component>
 </project>

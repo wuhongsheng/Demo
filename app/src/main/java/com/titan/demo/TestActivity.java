@@ -674,7 +674,6 @@ public class TestActivity extends Activity implements View.OnClickListener,DrawE
 				FileOutputStream fos = new FileOutputStream(fileDir + "/db.sqlite");
 				byte[] buffer = new byte[8129];
 				int count = 0;
-				// ��ʼ�������ݿ�
 
 				while ((count = db.read(buffer)) >= 0) {
 					fos.write(buffer, 0, count);

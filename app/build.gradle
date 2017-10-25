@@ -32,7 +32,8 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.0.1'
     //ESRI
-    compile 'com.esri.arcgisruntime:arcgis-android:100.0.0'
+    //compile 'com.esri.arcgis.android:arcgis-android:10.2.8-1'
+    //compile 'com.esri.arcgisruntime:arcgis-android:100.0.0'
     testCompile 'junit:junit:4.12'
     compile files('libs/spatialite-android-library.jar')
 }

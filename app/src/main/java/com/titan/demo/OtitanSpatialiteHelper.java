@@ -7,11 +7,8 @@ package com.titan.demo;
 * @date 2015-9-6 下午2:55:16 
 * @version V1.0   
 */
-import abc.abc.abc.ResourcesManager;
-import abc.abc.abc.TestActivity;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class OtitanSpatialiteHelper extends SQLiteOpenHelper {

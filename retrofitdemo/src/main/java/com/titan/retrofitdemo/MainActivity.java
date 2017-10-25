@@ -160,7 +160,6 @@ public class MainActivity extends AppCompatActivity {
                     public void onCompleted() {
                         //所有事件都完成，可以做些操作。。。
 
-
                     }
                     @Override
                     public void onError(Throwable e) {

@@ -8,7 +8,10 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/3ddemo" />
+            <option value="$PROJECT_DIR$/datacollection" />
             <option value="$PROJECT_DIR$/retrofitdemo" />
+            <option value="$PROJECT_DIR$/spatialite" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

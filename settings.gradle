@@ -1,1 +1,2 @@
-include  ':retrofitdemo'//':app',
+include ':retrofitdemo', ':3ddemo', ':spatialite', ':datacollection'//':app',
+//':app',
